@@ -363,6 +363,7 @@ const WalletsList = () => {
 
   return (
     <View style={styles.root} onLayout={onLayout}>
+      <Text>Balance is {getBalance()}</Text>
       <StatusBar barStyle={barStyle} backgroundColor="transparent" translucent animated />
       <View style={[styles.walletsListWrapper, stylesHook.walletsListWrapper]}>
         <SectionList
